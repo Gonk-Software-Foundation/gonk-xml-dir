@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CiscoIPPhoneDirectory>
+  <Title>Ham Subaccounts (VoIP.ms)</Title>
+  <Prompt>Select contact</Prompt>
+
+  <DirectoryEntry><Name>AG2V Amelia</Name><Telephone>106962</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>KB2RRQ Jason</Name><Telephone>102777</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>KD1LDO Mike</Name><Telephone>106942</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>KL1V Kevin</Name><Telephone>106556</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>KO4FDM Frank</Name><Telephone>106270</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>N2SPG Seth</Name><Telephone>106222</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>N6DTE Travis</Name><Telephone>106383</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>N8GMZ Goose</Name><Telephone>108469</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>VE3INP Ian</Name><Telephone>106420</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>VE3XEC Derek</Name><Telephone>106988</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>VO1INP Ian</Name><Telephone>107420</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>W0TV Dave</Name><Telephone>106666</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>W1PAC Patrick</Name><Telephone>106722</Telephone></DirectoryEntry>
+  <DirectoryEntry><Name>WH6EXS Shamacon</Name><Telephone>106789</Telephone></DirectoryEntry>
+
+</CiscoIPPhoneDirectory>
