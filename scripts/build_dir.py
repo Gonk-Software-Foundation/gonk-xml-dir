@@ -65,17 +65,18 @@ def build_xml(rows):
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         "<CiscoIPPhoneDirectory>",
-        "  <Title>Ham Subaccounts (VoIP.ms)</Title>",
+        "  <Title>GONK Extensions</Title>",
         "  <Prompt>Select contact</Prompt>",
     ]
     used = 0
     skipped_no_ext = 0
     for r in rows:
         name = r.get("description") or r.get("username") or "Unknown"
-        tel  = r.get("internal_extension") or ""  # skip if none/0/empty
-        if not tel:
+        ext  = r.get("internal_extension") or ""  # skip if none/0/empty
+        if not ext:
             skipped_no_ext += 1
             continue
+        tel = f"10{ext}"  # prefix here
         parts.append(
             f"  <DirectoryEntry><Name>{sax.escape(name)}</Name><Telephone>{sax.escape(str(tel))}</Telephone></DirectoryEntry>"
         )
