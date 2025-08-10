@@ -31,13 +31,20 @@ jobs:
         run: |
           python scripts/build_dir.py
 
+      - name: Build Polycom directory from dir.xml
+        env:
+          INPUT_PATH: dir.xml
+          OUTPUT_PATH: 000000000000-directory.xml
+        run: |
+          python scripts/dir_to_polycom.py
+
       - name: Commit & push if changed
         run: |
           git config user.name "gonk-bot"
           git config user.email "gonk-bot@users.noreply.github.com"
-          git add dir.xml
+          git add dir.xml 000000000000-directory.xml
           if ! git diff --cached --quiet; then
-            git commit -m "chore(phonebook): nightly update from VoIP.ms"
+            git commit -m "chore(phonebook): nightly update (dir.xml + Polycom directory)"
             git push
           else
             echo "No changes."
