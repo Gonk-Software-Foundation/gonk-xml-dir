@@ -27,8 +27,8 @@ jobs:
           VOIPMS_API_USERNAME: ${{ secrets.VOIPMS_API_USERNAME }}
           VOIPMS_API_PASSWORD: ${{ secrets.VOIPMS_API_PASSWORD }}
           OUTPUT_PATH: dir.xml              # or docs/dir.xml if you publish via Pages
-          LOG_PATH: logs/voipms_build.log   # file written & rotated by the script
-          VOIPMS_DEFAULT_POP: newyork1.voip.ms
+          LOG_PATH: txt/voipms_build.log   # file written & rotated by the script
+          VOIPMS_DEFAULT_POP: toronto.voip.ms
         run: |
           python scripts/build_dir.py
 
@@ -48,3 +48,4 @@ jobs:
           else
             echo "No changes."
           fi
+
