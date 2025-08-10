@@ -27,6 +27,7 @@ jobs:
           VOIPMS_API_USERNAME: ${{ secrets.VOIPMS_API_USERNAME }}
           VOIPMS_API_PASSWORD: ${{ secrets.VOIPMS_API_PASSWORD }}
           OUTPUT_PATH: dir.xml  # change if your file lives elsewhere
+		  DEBUG: 1
         run: |
           python scripts/build_dir.py
 
